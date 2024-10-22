@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DevTechApp</string>
+
+    <string-array name="port">
+        <item>ttyUSB0</item>
+        <item>ttyUSB1</item>
+        <item>ttyS0</item>
+        <item>ttyS1</item>
+        <item>ttyS2</item>
+        <item>ttyS3</item>
+        <item>ttyS4</item>
+        <item>ttyP0</item>
+        <item>ttyP1</item>
+        <item>ttyP2</item>
+        <item>ttyP3</item>
+    </string-array>
+</resources>
