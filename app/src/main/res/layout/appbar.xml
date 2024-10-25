@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:paddingHorizontal="5dp"
+    android:background="@drawable/design_gradient">
+
+    <ImageView
+        android:id="@+id/backPress"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back_arrow"
+        android:padding="5dp"
+        app:tint="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:id="@+id/appbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="Tittle"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:paddingHorizontal="10dp"/>
+    <ImageView
+        android:id="@+id/appbar_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/settings"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_marginEnd="20dp"
+        app:tint="@color/white"/>
+</LinearLayout>
+

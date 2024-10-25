@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1,2,3,4,5,6,7,8,9">
+
+            <TableRow android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/prod_motor_no"
+                    android:layout_gravity="center"
+                    android:width="100dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Apple"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/prod_name"
+                    android:layout_gravity="center"
+                    android:width="200dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Apple"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/prod_spec"
+                    android:layout_gravity="center"
+                    android:width="250dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="A"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/prod_desc"
+                    android:layout_gravity="center"
+                    android:width="250dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="A"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/qty"
+                    android:layout_gravity="center"
+                    android:width="100dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="100"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/prod_image"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <TextView
+                    android:id="@+id/prod_active"
+                    android:layout_gravity="center"
+                    android:width="100dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Active"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/prod_edit"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/color1"
+                    android:src="@drawable/baseline_edit"
+                    android:padding="10dp"
+                    android:text="Update"
+                    android:textColor="@color/white" />
+
+                <ImageButton
+                    android:id="@+id/prod_delete"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/baseline_delete"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+            </TableRow>
+        </TableLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

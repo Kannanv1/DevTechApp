@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Masters.EmployeeMaster">
+    <include
+        android:id="@+id/include"
+        layout="@layout/appbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/searchView_emp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:drawableLeft="@drawable/baseline_search"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:background="@drawable/outline_box"
+                android:hint="Search here..."
+                android:imeOptions="actionSearch"
+                android:maxHeight="50dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:stretchColumns="1,2,3,4,5"
+                    tools:context=".FuelSavePage">
+
+                    <TableRow android:background="@color/appbar">
+                        <TextView
+                            android:width="120dp"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="Employee Id"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:width="300dp"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="Employee Name"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:width="120dp"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="Mobile No"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:width="100dp"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="Active"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:width="80dp"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Edit"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:width="80dp"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Delete"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                    <ProgressBar
+                        android:id="@+id/prodprogress"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:indeterminateTint="@color/red"
+                        android:layout_gravity="center"
+                        android:visibility="gone"/>
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/employee_recycler"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            tools:listitem="@layout/item_employee">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+                    </ScrollView>
+                </TableLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

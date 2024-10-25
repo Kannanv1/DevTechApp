@@ -1,9 +1,48 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.DevTechApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.DevTech" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/appbar</item>
+        <item name="colorOnPrimary">@color/appbar</item>
+        <!-- Secondary brand color. -->
+        <item name="colorOnSecondary">@color/appbar</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/appbar</item>
+        <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.DevTechApp" parent="Base.Theme.DevTechApp" />
+    <style name="operatorButton" parent="commonButton">
+        <item name="android:textColor">@color/orange_500</item>
+    </style>
+
+    <style name="digitButton" parent="commonButton">
+        <item name="android:background">@drawable/outline_box</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="commonButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:layout_width">125dp</item>
+        <item name="android:layout_height">122dp</item>
+        <item name="backgroundTint">@color/cardBorderColor</item>
+        <item name="cornerRadius">36dp</item>
+        <item name="android:textSize">40dp</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="android:outlineSpotShadowColor" tools:ignore="NewApi">@color/grey_light</item>
+    </style>
+
+    <style name="digitButton1" parent="commonButton1">
+        <item name="android:background">@drawable/outline_box</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="commonButton1" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="cornerRadius">36dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:outlineSpotShadowColor" tools:ignore="NewApi">@color/grey_light</item>
+    </style>
+
 </resources>

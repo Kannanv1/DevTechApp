@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/master">
+        <item android:id="@+id/nav_emp_master"
+            android:icon="@drawable/profile"
+            android:title="Employee Master"/>
+        <item android:id="@+id/nav_motor_master"
+            android:icon="@drawable/motor"
+            android:title="Motor Master"/>
+        <item android:id="@+id/nav_prod_master"
+            android:icon="@drawable/product"
+            android:title="Product Master"/>
+    </group>
+    <group android:id="@+id/reports">
+        <item android:id="@+id/nav_reports"
+            android:icon="@drawable/report"
+            android:title="Reports"/>
+        <item android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Log Out"/>
+    </group>
+</menu>

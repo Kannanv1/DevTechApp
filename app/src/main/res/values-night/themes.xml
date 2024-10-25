@@ -1,7 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.DevTechApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.DevTech" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/appbar</item>
+        <item name="colorOnPrimary">@color/appbar</item>
+        <!-- Secondary brand color. -->
+        <item name="colorOnSecondary">@color/appbar</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/appbar</item>
     </style>
 </resources>
